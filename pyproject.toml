@@ -1,0 +1,47 @@
+[project]
+name = "image-multi-asset-extractor"
+version = "0.1.0"
+description = "Split 2.5D/isometric sprite sheets into transparent PNG map assets."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Image Multi Asset Extractor contributors" }]
+keywords = ["opencv", "rembg", "isometric", "sprite-sheet", "map-assets", "2.5d"]
+dependencies = [
+  "opencv-python",
+  "pillow",
+  "numpy",
+  "rembg",
+]
+
+[project.optional-dependencies]
+cpu = [
+  "onnxruntime",
+  "rembg[cpu]",
+]
+amd-directml = [
+  "onnxruntime-directml",
+  "rembg[cpu]",
+]
+amd-rocm = [
+  "onnxruntime-rocm",
+  "rembg[cpu]",
+]
+nvidia = [
+  "onnxruntime-gpu",
+  "rembg[gpu]",
+]
+ui = [
+  "gradio>=4.0",
+]
+dev = [
+  "ruff>=0.6",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

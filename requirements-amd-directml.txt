@@ -1,0 +1,2 @@
+onnxruntime-directml
+rembg[cpu]

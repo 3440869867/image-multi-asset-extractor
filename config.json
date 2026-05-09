@@ -1,0 +1,17 @@
+{
+  "category": "roads-waterways",
+  "prefix": "river",
+  "padding": 36,
+  "minArea": 8000,
+  "maxArea": 1200000,
+  "removeBackground": true,
+  "outputSize": 512,
+  "ignoreTextRegions": true,
+  "gpuBackend": "auto",
+  "requireNvidiaGpu": false,
+  "allowCpuFallback": true,
+  "licenseStatus": "ai-generated",
+  "manifestSpriteBase": "/assets/map/isometric",
+  "commercialSafe": true,
+  "tags": ["2.5d", "isometric", "map", "river"]
+}

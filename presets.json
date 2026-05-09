@@ -1,0 +1,44 @@
+{
+  "presets": {
+    "roads-waterways": {
+      "category": "roads-waterways",
+      "prefix": "river",
+      "padding": 36,
+      "minArea": 8000,
+      "maxArea": 1200000,
+      "outputSize": 512,
+      "gpuBackend": "auto",
+      "tags": ["2.5d", "isometric", "map", "river", "road", "waterway"]
+    },
+    "xianxia-buildings": {
+      "category": "xianxia",
+      "prefix": "temple",
+      "padding": 40,
+      "minArea": 12000,
+      "maxArea": 1400000,
+      "outputSize": 512,
+      "gpuBackend": "auto",
+      "tags": ["2.5d", "isometric", "map", "xianxia", "building", "temple"]
+    },
+    "sci-fi-structures": {
+      "category": "sci-fi",
+      "prefix": "station",
+      "padding": 36,
+      "minArea": 10000,
+      "maxArea": 1500000,
+      "outputSize": 512,
+      "gpuBackend": "auto",
+      "tags": ["2.5d", "isometric", "map", "sci-fi", "building", "station"]
+    },
+    "war-markers": {
+      "category": "war",
+      "prefix": "war",
+      "padding": 32,
+      "minArea": 5000,
+      "maxArea": 900000,
+      "outputSize": 512,
+      "gpuBackend": "auto",
+      "tags": ["2.5d", "isometric", "map", "war", "marker"]
+    }
+  }
+}

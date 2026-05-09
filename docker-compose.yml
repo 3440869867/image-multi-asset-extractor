@@ -1,0 +1,14 @@
+services:
+  image-multi-asset-extractor:
+    build: .
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./input_sheets:/app/input_sheets
+      - ./cropped:/app/cropped
+      - ./output_png:/app/output_png
+      - ./review_needed:/app/review_needed
+      - ./manifest:/app/manifest
+      - ./reports:/app/reports
+    environment:
+      - GRADIO_SERVER_NAME=0.0.0.0

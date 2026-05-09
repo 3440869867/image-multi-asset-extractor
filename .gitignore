@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+.env.*
+.ruff_cache/
+.pytest_cache/
+
+# Generated assets and logs
+input_sheets/*
+cropped/*
+output_png/*
+review_needed/*
+manifest/*.json
+reports/*
+processing.log
+!input_sheets/.gitkeep
+!cropped/.gitkeep
+!output_png/.gitkeep
+!review_needed/.gitkeep
+!manifest/.gitkeep
+!reports/.gitkeep
+
+# Local model/cache files
+*.onnx
+*.pt
+*.pth
+*.safetensors
+.u2net/
+models/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
